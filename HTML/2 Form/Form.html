@@ -10,30 +10,32 @@
     <form action = "">
         <h1>Payment Form</h1>
         <h2>User details</h2>
-            <p>Name: <input type="text" name = "fname"></p>
+            <p>Name: <input type="text" name = "fname" required></p>
             <fieldset>
                 <legend>Gender</legend>
                 <p>
-                    Male<input type="radio" name = "gender" id="male">
-                    Female<input type="radio" name = "gender" id="female">
+                    Male<input type="radio" name = "gender" id="male" required>
+                    Female<input type="radio" name = "gender" id="female" required>
                 </p>
             </fieldset>
-            <p>Address: 
-                <textarea name = "address" rows="5" cols="90">
+            <p required>Address: 
+                <textarea name = "address" rows="5" cols="90" required>
                 </textarea>
             </p>
-            <p>Email: <input type="email" name = "mail" id = "mail"></p>
-            <p>Pincode: <input type="number" name = "pincode" id="pin"></p>
+            <p>Email: <input type="email" name = "mail" id = "mail" required></p>
+            <p>Pincode: <input type="number" name = "pincode" id="pin" required></p>
         <hr>    
         <h2>Payment details</h2>
             <p>Card:
-                <select name = "ctype" id="card_type">
+                <select name = "ctype" id="card_type" required>
                     <option>--Select type--</option>
                     <option value = "visa">Visa</option>
                     <option value = "master">Master</option>
                 </select>
             </p>
             <p>Card number: <input type="number" name = "card_number" id="card_number"></p>
+            <p>Expiry Date: <input type="date" name = "exp_date" id="exp_date"></p>
+            <input type="submit" value= "Pay Now">
     </form>
     
 </body>
