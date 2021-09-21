@@ -7,15 +7,33 @@
     <title>Form</title>
 </head>
 <body>
-    <h1>Form</h1>
-    <hr>
-    <h2>User Details</h2>
-    <hr>
-    <input type="text" name="fName">
-
-    <hr>
-    <h2>Payment Details</h2>
-    <hr>
+    <form action = "">
+        <h1>Payment Form</h1>
+        <h2>User details</h2>
+            <p>Name: <input type="text" name = "fname"></p>
+            <fieldset>
+                <legend>Gender</legend>
+                <p>
+                    Male<input type="radio" name = "gender" id="male">
+                    Female<input type="radio" name = "gender" id="female">
+                </p>
+            </fieldset>
+            <p>Address: 
+                <textarea name = "address" rows="5" cols="90">
+                </textarea>
+            </p>
+            <p>Email: <input type="email" name = "mail" id = "mail"></p>
+            <p>Pincode: <input type="number" name = "pincode" id="pin"></p>
+        <hr>    
+        <h2>Payment details</h2>
+            <p>Card:
+                <select name = "ctype" id="card_type">
+                    <option>--Select type--</option>
+                    <option>Visa</option>
+                    <option>Master</option>
+                </select>
+            </p>
+    </form>
     
 </body>
 </html>
