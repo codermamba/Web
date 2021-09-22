@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel= "stylesheet" href = "style.css">
+    <title>Form</title>
+</head>
+<body>
+    <form action = "">
+        <h1>Payment Form</h1>
+        <h2>User details</h2>
+            <p>Name: <input type="text" name = "fname" required></p>
+            <fieldset>
+                <legend>Gender</legend>
+                <p>
+                    Male<input type="radio" name = "gender" id="male" required>
+                    Female<input type="radio" name = "gender" id="female" required>
+                </p>
+            </fieldset>
+            <p required>Address: 
+                <textarea name = "address" rows="5" cols="90" required>
+                </textarea>
+            </p>
+            <p>Email: <input type="email" name = "mail" id = "mail" required></p>
+            <p>Pincode: <input type="number" name = "pincode" id="pin" required></p>
+        <hr>    
+        <h2>Payment details</h2>
+            <p>Card:
+                <select name = "ctype" id="card_type" required>
+                    <option>--Select type--</option>
+                    <option value = "visa">Visa</option>
+                    <option value = "master">Master</option>
+                </select>
+            </p>
+            <p>Card number: <input type="number" name = "card_number" id="card_number"></p>
+            <p>Expiry Date: <input type="date" name = "exp_date" id="exp_date"></p>
+            <input type="submit" value= "Pay Now">
+            <ul>
+                <li>ab</li>
+                <li class = "special">ab</li>
+                <li id = "id">ab</li>
+              </ul>
+        </form>
+    
+</body>
+</html>

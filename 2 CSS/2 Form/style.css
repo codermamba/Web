@@ -1,0 +1,25 @@
+p{
+    color:blue;
+}
+fieldset,h2{
+    color:blue;
+}
+.special{
+    color:red;
+}
+li.special{
+    color:brown;
+}
+#id{
+    color:pink;
+}
+h2+p{
+    font-size: 200%;
+}
+p:hover{
+    color:red;
+}
+li[class = "special"]
+{
+    font-size: 300%;
+}
